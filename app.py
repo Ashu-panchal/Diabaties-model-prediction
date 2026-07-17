@@ -4,7 +4,7 @@ import joblib
 
 # Load the trained Decision Tree model at startup 
 deployed_dt = joblib.load('diabetes_prediction_model.pkl')
-
+ 
 # --- CODE BLOCK: PREDICTION LOGIC FOR 5 FEATURES ---
 # x = df[['Pregnancies', 'Glucose', 'Insulin', 'BMI',  'Age']]
 
