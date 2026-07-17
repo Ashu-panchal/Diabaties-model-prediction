@@ -2,7 +2,7 @@ import os
 import gradio as gr
 import joblib
 
-# Load the trained Decision Tree model at startup
+# Load the trained Decision Tree model at startup 
 deployed_dt = joblib.load('diabetes_prediction_model.pkl')
 
 # --- CODE BLOCK: PREDICTION LOGIC FOR 5 FEATURES ---
