@@ -6,6 +6,8 @@ import joblib
 deployed_dt = joblib.load('diabetes_prediction_model.pkl')
 
 # --- CODE BLOCK: PREDICTION LOGIC FOR 5 FEATURES ---
+# x = df[['Pregnancies', 'Glucose', 'Insulin', 'BMI',  'Age']]
+
 def predict_diabetes(pregnancies, glucose, insulin, bmi, age):
     # The model expects a 2D array matching the exact order of x_train
     input_data = [[pregnancies, glucose, insulin, bmi, age]]
